@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+video {
+    width: 20rem;
+    padding-top: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+input {
+    width: 100%;
+    margin-top: 10px;
+    appearance: none;
+    background: #ea0909;
+    height: 4px;
+    border-radius: 2px;
+    outline: none;
+}
+
+input::-webkit-slider-thumb {
+    /* appearance: none; */
+    width: 16px;
+    height: 16px;
+    background: #3498db;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+i {
+    margin: 0 15px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #606060;
+}
+
+/* Play/Pause button color changes */
+i.fa-play-circle:hover,
+i.fa-pause:hover {
+    color: #ff0000;
+}
+
+/* Additional styling for the control buttons */
+i.fa-backward:hover,
+i.fa-forward:hover {
+    color: #ff0000;
+}
+
+/* Progress bar styles */
+.progress-bar {
+    background: #e0e0e0;
+    height: 2px;
+    position: relative;
+}
+
+.progress {
+    background: #3498db;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Time display styles */
+.time-display {
+    margin-left: 10px;
+    color: #606060;
+}
+
+/* Fullscreen button styles */
+.fullscreen {
+    margin-left: auto;
+}
+
+/* Volume control styles */
+.volume-control {
+    display: flex;
+    align-items: center;
+}
+
+.volume-icon {
+    margin-right: 5px;
+    color: #606060;
+}
+
+.volume-slider {
+    width: 80px;
+    margin-right: 10px;
+}
+
+.volume-slider::-webkit-slider-thumb {
+    width: 12px;
+    height: 12px;
+}
+

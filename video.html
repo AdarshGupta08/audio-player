@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video player Player</title>
+    <link rel="stylesheet" href="./video.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200&family=Vina+Sans&family=Work+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+    <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome" href="/css/app-wa-89587a1ff923b19df8a6a37179b8327c.css?vsn=d">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css">
+</head>
+<body>
+    <main>
+        <section>
+            <video src="./20230510_212319.mp4" id="myVideo">
+                Your browser does not support the video tag.
+            </video>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <div id="controls">
+                <i class="fas fa-backward" onclick="skip(-5)"></i>
+                <i class="fas fa-play-circle" onclick="togglePlay()"></i>
+                <i class="fas fa-pause" onclick="togglePause()"></i>
+                <i class="fas fa-forward" onclick="skip(5)"></i>
+                <div class="time-display">0:00 / 0:00</div>
+                <div class="fullscreen">
+                    <i class="fas fa-expand" onclick="toggleFullscreen()"></i>
+                </div>
+                <div class="volume-control">
+                    <i class="fas fa-volume-up volume-icon"></i>
+                    <input type="range" class="volume-slider" oninput="setVolume(this.value)">
+                </div>
+            </div>
+            <input type="range" class="seek-bar" oninput="seek(this.value)">
+        </section>
+    </main>
+    <script src="./video.js"></script>
+    
+</body>
+</html>
